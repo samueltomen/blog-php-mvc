@@ -27,6 +27,7 @@ class Blog
 
     /** Récupère l'identifiant de publication dans le constructeur afin d'éviter la duplication du même code **/
     $this->_iId = (int) (!empty($_GET['id']) ? $_GET['id'] : 0);
+	
   }
 
 	/* ================ ACTIONS AVEC VUS ================ */
