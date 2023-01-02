@@ -1,7 +1,7 @@
 <?php require 'inc/header.php' ?>
 <?php require 'inc/topbar.php' ?>
 <main>
-  <div class="container">
+  <div class="container bg-dark">
     <h1 class="page-title">Liste des chapitres</h1>
     <?php foreach ($this->oPosts as $oPost): ?>
       <div class="row">

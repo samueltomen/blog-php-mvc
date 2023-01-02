@@ -1,20 +1,20 @@
 
 <header>
-	<nav class="light-blue">
+	<nav class="light-green">
 		<div class="container">
 			<div class="nav-wrapper">
 
-				<a href="<?=ROOT_URL?>blog_index.html" class="brand-logo">Jean Forteroche</a>
+				<a href="<?=ROOT_URL?>" class="brand-logo">Jean Forteroche</a>
 
 				<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
 
 				<ul class="right hide-on-med-and-down">
 
-					<li class="<?php echo ($_GET['a']=="index")?"active" : ""; ?>"><a href="<?=ROOT_URL?>blog_index.html">Accueil</a></li>
-					<li class="<?php echo ($_GET['a']=="chapters")?"active" : ""; ?>"><a href="<?=ROOT_URL?>blog_chapters.html">Chapitres</a></li>
+					<li class="<?php echo ($_GET['a']=="index")?"active" : ""; ?>"><a href="<?=ROOT_URL?>">Accueil</a></li>
+					<li class="<?php echo ($_GET['a']=="chapters")?"active" : ""; ?>"><a href="<?=ROOT_URL?>./View/chapters.php ">Chapitres</a></li>
 
 					<?php if (empty($_SESSION['is_admin']) && empty($_SESSION['is_user'])): ?>
-					<li><a href="<?=ROOT_URL?>blog_login.html" class="btn green waves-effect waves-light">Connexion<i class="material-icons right">lock_open</i></a></li>
+					<li><a href="<?=ROOT_URL?>blog_login.html" class="btn black waves-effect waves-light">Connexion<i class="material-icons right">lock_open</i></a></li>
 					<?php endif ?>
 
 					<?php if (!empty($_SESSION['is_admin'])): ?>

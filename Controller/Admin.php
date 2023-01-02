@@ -140,7 +140,7 @@ class Admin extends Blog
         $this->oUtil->aTableName[] = $table_name;
       }
 
-      $this->oUtil->length = count($this->oUtil->aTableName);
+      // $this->oUtil->length = count($this->oUtil->aTableName);
 
       $this->oUtil->oComments = $this->oModel->getCommentsUnseen();
 
